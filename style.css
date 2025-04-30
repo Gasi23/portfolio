@@ -1,0 +1,61 @@
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+    --primary: #007bff;
+  }
+  
+  [data-theme="dark"] {
+    --bg: #121212;
+    --text: #ffffff;
+    --primary: #1e90ff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1, h2 {
+    color: var(--primary);
+  }
+  
+  section {
+    margin: 2rem 0;
+  }
+  
+  .project-card {
+    border: 1px solid var(--primary);
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+  
+  button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
