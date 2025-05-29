@@ -1,13 +1,67 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>Gabriely Victória | Portfólio</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- React renderiza aqui, mas conteúdo estático abaixo é fallback / SEO -->
+      <header>
+        <h1>Gabriely Victória</h1>
+        <button id="theme-toggle">🌙</button>
+      </header>
+
+      <section id="home">
+        <h2>Olá, eu sou Gabriely</h2>
+        <p>Desenvolvedora Web apaixonada por criar interfaces incríveis.</p>
+      </section>
+
+      <section id="about">
+        <h2>Sobre Mim</h2>
+        <p>Pequena biografia. Tecnologias que uso: HTML, CSS, JavaScript, etc.</p>
+      </section>
+
+      <section id="projects">
+        <h2>Meus Projetos</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="assets/img/projeto1.jpg" alt="Projeto 1" />
+            <h3>Projeto 1</h3>
+            <p>Descrição rápida do projeto 1.</p>
+          </div>
+          <div class="card">
+            <img src="assets/img/projeto2.jpg.webp" alt="Projeto 2" />
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto 2.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contato</h2>
+        <form id="contact-form">
+          <input type="text" placeholder="Seu nome" required />
+          <input type="email" placeholder="Seu email" required />
+          <textarea placeholder="Sua mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      <footer>
+        <p>&copy; 2025 - Gabriely Victória</p>
+        <div class="socials">
+          <!-- Redes sociais futuramente -->
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
